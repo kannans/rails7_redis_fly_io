@@ -1,6 +1,6 @@
 ### What is repo?
   This is simple Ruby on Rails application with redis integration.  It has rails 7+, ruby 3.0, redis, postgresql. 
-  It's  a example application how to use websocket using redis in rails application.
+  It's  a example application how to use websocket using redis in rails application. It's running on Fly.io.
   
 ### What is fly.io?
 It's a cloud platform for application deployment. Alternate for Heroku.com
