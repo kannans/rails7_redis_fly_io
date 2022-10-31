@@ -2,9 +2,10 @@
   This is simple Ruby on Rails application with redis integration.  It has rails 7+, ruby 3.0, redis, postgresql. 
   It's  a example application how to use websocket using redis in rails application.
   
-### How it fly.io?
-Fly is a platform for running full stack apps and databases. It use to deploy rails application pretty fast. Just few commands the application is production ready.
-This process completely on docker image and using fly.toml configure the clusters.
+### What is fly.io?
+It's a cloud platform for application deployment. Alternate for Heroku.com
+
+Fly.io is a platform for running full stack apps and databases. It use to deploy rails application pretty fast. Just few commands the application is production ready. This process completely on docker image and using fly.toml configuration, its runs on fly.io clusters
 
 ### How it was started?
 
