@@ -7,6 +7,8 @@ It's a cloud platform for application deployment. Alternate for Heroku.com
 
 Fly.io is a platform for running full stack apps and databases. It use to deploy rails application pretty fast. Just few commands the application is production ready. This process completely on docker image and using fly.toml configuration, its runs on fly.io clusters
 
+Note: Its free and no payment cards required. *Best comparing to Heroku.
+
 ### How it was started?
 
 create account in https://fly.io
