@@ -48,5 +48,9 @@ bin/rails server
 ```
 Dev url : http://localhost:3000
 
+### Why redis?
+With Redis, you write fewer lines of code to store, access, and use data in your applications. In rails application it act best for caching and websockets.
+
+
 ### Where to acccess production?
 https://proud-field-5321.fly.dev/
