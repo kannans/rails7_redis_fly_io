@@ -72,3 +72,4 @@ group :test do
 end
 
 gem "pg", "~> 1.4"
+gem "redis", "~> 4.0"

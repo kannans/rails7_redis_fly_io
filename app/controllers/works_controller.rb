@@ -40,6 +40,7 @@ class WorksController < ApplicationController
       if @work.update(work_params)
         format.html { redirect_to work_url(@work), notice: "Work was successfully updated." }
         format.json { render :show, status: :ok, location: @work }
+        @work.broadcast_replace_later_to 'works', partial: 'works/work'
       else
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @work.errors, status: :unprocessable_entity }

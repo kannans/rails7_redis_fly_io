@@ -2,6 +2,8 @@
 
 <h1>Works</h1>
 
+<%= turbo_stream_from 'works' %>
+
 <div id="works">
   <% @works.each do |work| %>
     <%= render work %>
