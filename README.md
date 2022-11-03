@@ -55,7 +55,7 @@ With Redis, you write fewer lines of code to store, access, and use data in your
 
 
 ### Where to acccess production?
-https://proud-field-5321.fly.dev/
+https://kannansv.fly.dev/
 
 
 ### How to use complete bundle of Bootstrap 5 css framework?
@@ -64,6 +64,7 @@ Build fast, responsive sites with Bootstrap Powerful, extensible, and feature-pa
 Add bootstrap gem for css style
 ```rb
 gem 'bootstrap', '~> 5.2.2'
+gem 'sassc-rails'
 ```
 We need to import this css style to our application stylesheets. 
 Before that We should rename `application.css` to `application.scss`
@@ -103,3 +104,9 @@ It works!!!
 #### Exceptions and fixes
 1) requires node js:  Rails app `fly deploy` failing with ExecJS::RuntimeUnavailable: Could not find a JavaScript runtime find solution here. https://community.fly.io/t/rails-app-fly-deploy-failing-with-execjs-could-not-find-a-javascript-runtime/7904
 
+Actually!!!.. I tweek the code to fix runtime js issue. First include `nodejs` in `DEPLOY_PACKAGES`  list
+and update the `fly.task` file with following code.
+```rb
+task :build #=> 'assets:precompile'
+task :server => %i[swapfile assets:precompile]
+```
