@@ -71,5 +71,4 @@ group :test do
   gem "webdrivers"
 end
 
-gem "pg", "~> 1.4"
-gem "redis", "~> 4.0"
+gem 'bootstrap', '~> 5.2.2'
