@@ -58,7 +58,7 @@ With Redis, you write fewer lines of code to store, access, and use data in your
 https://proud-field-5321.fly.dev/
 
 
-### how to use complete bundle of Bootstrap 5 css framework?
+### How to use complete bundle of Bootstrap 5 css framework?
 Build fast, responsive sites with Bootstrap Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
 
 Add bootstrap gem for css style
@@ -100,8 +100,6 @@ import * as bootstrap from 'bootstrap'
 ```
 It works!!!
 
-Exceptions requires node js.
-1) Rails app `fly deploy` failing with ExecJS::RuntimeUnavailable: Could not find a JavaScript runtime find solution here. https://community.fly.io/t/rails-app-fly-deploy-failing-with-execjs-could-not-find-a-javascript-runtime/7904
+#### Exceptions and fixes
+1) requires node js:  Rails app `fly deploy` failing with ExecJS::RuntimeUnavailable: Could not find a JavaScript runtime find solution here. https://community.fly.io/t/rails-app-fly-deploy-failing-with-execjs-could-not-find-a-javascript-runtime/7904
 
-
-Finaly It works!!!!!
