@@ -32,6 +32,13 @@ fly secrets set REDIS_URL=redis://default:<redacted>.upstash.io
 fly deploy
 fly open
 
+#debug: 
+
+fly ssh console
+flyctl secrets unset RAILS_MASTER_KEY
+flyctl secrets set RAILS_MASTER_KEY=<value>
+
+
 ```
 ### How to run this application?
 clone this repo `git clone git@github.com:kannans/rails7_redis_fly_io.git`
