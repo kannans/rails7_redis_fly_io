@@ -99,4 +99,9 @@ simply include this line in to `applicaiton.js`, It will include all`(*)` the bo
 import * as bootstrap from 'bootstrap'
 ```
 It works!!!
- 
+
+Exceptions requires node js.
+1) Rails app `fly deploy` failing with ExecJS::RuntimeUnavailable: Could not find a JavaScript runtime find solution here. https://community.fly.io/t/rails-app-fly-deploy-failing-with-execjs-could-not-find-a-javascript-runtime/7904
+
+
+Finaly It works!!!!!
