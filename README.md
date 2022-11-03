@@ -13,7 +13,7 @@ Note: Its free and no payment cards required. *Best comparing to Heroku.
 
 create account in https://fly.io
 
-```
+```sh
 # create rails application 
 rails --version
 rails new project_name
@@ -27,6 +27,7 @@ fly open
 # create redis instance.
 fly redis create
 fly secrets set REDIS_URL=redis://default:<redacted>.upstash.io
+fly redis connect
 
 # deploy again
 fly deploy
@@ -37,6 +38,8 @@ fly open
 fly ssh console
 flyctl secrets unset RAILS_MASTER_KEY
 flyctl secrets set RAILS_MASTER_KEY=<value>
+fly redis connect
+fly logs
 
 
 ```
