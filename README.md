@@ -69,7 +69,7 @@ We need to import this css style to our application stylesheets.
 Before that We should rename `application.css` to `application.scss`
 
 `application.scss` file import the bootstrap bundle
-```
+```css
 ....
  *
  *= require_tree .
@@ -94,7 +94,7 @@ pin "@popperjs/core", to: "https://ga.jspm.io/npm:@popperjs/core@2.11.6/lib/inde
 
 simply include this line in to `applicaiton.js`, It will include all`(*)` the bootstrap js plugins.
 
-```
+```js
 ...
 import * as bootstrap from 'bootstrap'
 ```
