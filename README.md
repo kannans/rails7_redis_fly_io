@@ -56,3 +56,47 @@ With Redis, you write fewer lines of code to store, access, and use data in your
 
 ### Where to acccess production?
 https://proud-field-5321.fly.dev/
+
+
+### how to use complete bundle of Bootstrap 5 css framework?
+Build fast, responsive sites with Bootstrap Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
+
+Add bootstrap gem for css style
+```rb
+gem 'bootstrap', '~> 5.2.2'
+```
+We need to import this css style to our application stylesheets. 
+Before that We should rename `application.css` to `application.scss`
+
+`application.scss` file import the bootstrap bundle
+```
+....
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap";  
+```
+Now we have to import bootstrap javascripts. Import by using `importmap`
+
+```
+./bin/importmap pin bootstrap  
+```
+
+this will add following two lines in to `importmap.rb`
+
+```
+....
+pin "bootstrap", to: "https://ga.jspm.io/npm:bootstrap@5.2.2/dist/js/bootstrap.esm.js"
+pin "@popperjs/core", to: "https://ga.jspm.io/npm:@popperjs/core@2.11.6/lib/index.js"
+```
+
+simply include this line in to `applicaiton.js`, It will include all`(*)` the bootstrap js plugins.
+
+```
+...
+import * as bootstrap from 'bootstrap'
+```
+It works!!!
+ 
