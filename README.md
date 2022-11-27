@@ -120,3 +120,20 @@ and update the `fly.task` file with following code.
 task :build #=> 'assets:precompile'
 task :server => %i[swapfile assets:precompile]
 ```
+
+### How to Do Custom Domains With Fly?
+
+```
+flyctl ips list -a <appname>` #to get the IPv4 and IPv6 addresses.
+flyctl certs create -a <appname> example.com
+```
+
+You can direct traffic to kannans.dev by:
+
+1: Adding an A record to your DNS service which reads
+
+    A @ 137.66.54.104
+
+You can validate your ownership of kannans.dev by:
+
+2: Adding an AAAA record to your DNS service which reads:
