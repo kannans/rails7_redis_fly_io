@@ -137,4 +137,5 @@ You can direct traffic to example.com by:
 You can validate your ownership of kannans.dev by:
 
 2: Adding an AAAA record to your DNS service which reads:
-    `AAAA @ 2a09:xx:xx::xxxx
+
+    `AAAA @ 2a09:xx:xx::xxxx`
